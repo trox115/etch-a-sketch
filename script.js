@@ -32,6 +32,16 @@ function hovereffect(){
     }
 }
 
-function mouseOver(x){
+function reset(){
+   var gridsize= prompt("What should the size be?");
+   clearGrid();
+   createGrid(gridsize);
    
+}
+
+function clearGrid(){
+    const grid =document.querySelectorAll('.grid');
+    for(var i=0;i<grid.length;i++){
+        grid[i].remove();
+    }
 }

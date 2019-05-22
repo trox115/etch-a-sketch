@@ -15,8 +15,23 @@ for (var i = 0; i < grid.length; i++) {
     grid[i].style.height=960/x;
 }
            
-
+hovereffect();
 }
 document.addEventListener("DOMContentLoaded", function() {
-    createGrid(16);
+    createGrid(32);
   });
+
+function hovereffect(){
+    const grid = document.querySelectorAll('.grid');
+    //grid.style.backgroundColor="red";
+
+    for (var i = 0; i < grid.length; i++) {
+    grid[i].addEventListener("mouseover", function (event){
+        event.target.style.backgroundColor="red";
+    })
+    }
+}
+
+function mouseOver(x){
+   
+}
